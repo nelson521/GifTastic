@@ -7,7 +7,7 @@ $(document).ready(function() {
     for (var i = 0; i < things.length; i++) {
       var btn = $("<button>");
       btn.text(things[i]);
-      $(".showButton").append(btn[i]);
+      $(".showButton").append(btn);
     }
   }
   makingButton();
