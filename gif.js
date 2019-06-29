@@ -30,6 +30,17 @@ $(document).ready(function () {
 
   });
 
+  $('.gifButton').on('click', function(){
+    var requestUrl = "https://api.giphy.com/v1/gifs/search?api_key=74onGORbRcVBdg55CFw1tMcsKREsHiwv&q=" + q + "&limit=10&offset=0&rating=G&lang=en"; 
+    var q = things;
+    $.ajax({
+      url: requestUrl,
+      method: "GET"
+    }).then(function(response) {
+      
+    })
+  });
+
 
 
 
